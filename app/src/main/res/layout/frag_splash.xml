@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorFFF"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/splash_icon"
+        app:layout_heightPercent="15%sw"
+        app:layout_marginTopPercent="15%sh"
+        app:layout_widthPercent="15%sw" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/splash_icon_text"
+        app:layout_marginTopPercent="30%sh" />
+
+    <TextView
+        android:id="@+id/tv_pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/splash_updating"
+        android:textColor="@color/colorEAD100"
+        app:layout_marginTopPercent="25%sh"
+        app:layout_textSizePercent="2%sh" />
+
+    <com.aha.aha.widget.ProgressWidget
+        android:id="@+id/pg"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorCCC"
+        app:layout_marginTopPercent="1%sh" />
+
+</com.hiber.tools.layout.PercentLinearLayout>

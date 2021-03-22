@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_bg3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="70%sh">
+
+        <ImageView
+            android:id="@+id/iv_bg3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_wave_bg" />
+
+        <ImageView
+            android:id="@+id/iv_now3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_now"
+            app:layout_heightPercent="13.7%sw"
+            app:layout_marginTopPercent="8%sh"
+            app:layout_widthPercent="45%sw" />
+
+        <ImageView
+            android:id="@+id/iv_coffee3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_now3"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.7"
+            android:src="@drawable/guide_coffee"
+            app:layout_heightPercent="15%sw"
+            app:layout_marginTopPercent="10%sh"
+            app:layout_widthPercent="15%sw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_coffee3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/guide3_i_am_here"
+            android:textColor="@color/colorFFF"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="12%sh"
+            app:layout_textSizePercent="3%sh" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/bt_come3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bg3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_selector"
+        android:text="@string/guide3_come_on"
+        android:textColor="@color/colorFFF"
+        android:textStyle="bold"
+        app:layout_marginTopPercent="10%sh"
+        app:layout_textSizePercent="2.5%sh"
+        app:layout_widthPercent="40%sw" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

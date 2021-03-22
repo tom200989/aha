@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFFF"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="70%sh">
+
+        <ImageView
+            android:id="@+id/iv_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_wave_bg" />
+
+        <ImageView
+            android:id="@+id/iv_hi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guide_hi"
+            app:layout_heightPercent="15%sw"
+            app:layout_marginStartPercent="5%sh"
+            app:layout_marginTopPercent="5%sh"
+            app:layout_widthPercent="18%sw" />
+
+        <TextView
+            android:id="@+id/tv_nice_to1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/guide1_hen_nice_to"
+            android:textColor="@color/colorFFF"
+            android:textStyle="bold"
+            app:layout_textSizePercent="3%sh" />
+
+        <ImageView
+            android:id="@+id/iv_smaile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/guide_smile"
+            app:layout_heightPercent="18%sw"
+            app:layout_marginBottomPercent="5%sh"
+            app:layout_marginStartPercent="5%sh"
+            app:layout_widthPercent="18%sw" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_first_met1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bg1"
+        android:text="@string/guide1_first_meet"
+        android:textColor="@color/colorEAD100"
+        android:textStyle="bold"
+        app:layout_marginStartPercent="5%sh"
+        app:layout_marginTopPercent="5%sh"
+        app:layout_textSizePercent="3%sh" />
+
+    <TextView
+        android:id="@+id/tv_first_met1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_first_met1"
+        android:text="@string/guide1_first_meet2"
+        android:textColor="@color/colorEAD100"
+        android:textStyle="bold"
+        app:layout_marginStartPercent="15%sh"
+        app:layout_marginTopPercent="3%sh"
+        app:layout_textSizePercent="3%sh" />
+
+    <ImageView
+        android:id="@+id/iv_next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/guide_right_arrow"
+        app:layout_heightPercent="12%sw"
+        app:layout_marginBottomPercent="3%sh"
+        app:layout_marginEndPercent="3%sh"
+        app:layout_widthPercent="12%sw" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

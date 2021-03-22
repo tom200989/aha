@@ -58,7 +58,7 @@ dependencies {
     // 规范包
     api(name: 'ma_lint6', ext: 'aar')
     // 网络引擎
-    api(name: 'ma_bmob1', ext: 'aar')
+    api(name: 'ma_bmobwork_v1', ext: 'aar')
     
     /* ------------------------------------------- MA-BMOB ------------------------------------------- */
 

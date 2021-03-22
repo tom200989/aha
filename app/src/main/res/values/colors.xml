@@ -3,4 +3,14 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTheme">#FEE300</color>
+    <color name="colorFED400">#FED400</color>
+    <color name="colorDCC400">#DCC400</color>
+    <color name="colorFF7700">#FF7700</color>
+    <color name="colorFEF17F">#FEF17F</color>
+    <color name="colorEAD100">#F1D800</color>
+    <color name="colorCCC">#CCC</color>
+    <color name="color505050">#505050</color>
+    <color name="colorFFF">#FFF</color>
 </resources>

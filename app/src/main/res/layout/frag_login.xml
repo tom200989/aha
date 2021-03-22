@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <ImageView
+        android:id="@+id/rl_bg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_circle_bg"
+        app:layout_heightPercent="85%sh" />
+
+    <com.hiber.tools.layout.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 图标 -->
+        <ImageView
+            android:id="@+id/iv_login_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_aha_icon"
+            app:layout_heightPercent="12.25%sw"
+            app:layout_marginTopPercent="10%sh"
+            app:layout_widthPercent="33%sw" />
+
+        <!-- 用户名 -->
+        <com.hiber.tools.layout.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="7%sh"
+            app:layout_marginTopPercent="10%sh"
+            app:layout_widthPercent="70%sw">
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_corner"
+                android:hint="@string/login_input_name"
+                android:inputType="text"
+                android:maxLength="16"
+                android:paddingStart="50dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/color505050"
+                android:textColorHint="@color/colorCCC"
+                app:layout_textSizePercent="2.5%sh" />
+
+            <ImageView
+                android:id="@+id/et_login_userIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_user_icon"
+                app:layout_heightPercent="60%h"
+                app:layout_marginStartPercent="2%sw"
+                app:layout_widthPercent="60%h" />
+
+        </com.hiber.tools.layout.PercentRelativeLayout>
+
+        <!-- 密码 -->
+        <com.hiber.tools.layout.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="7%sh"
+            app:layout_marginTopPercent="2%sh"
+            app:layout_widthPercent="70%sw">
+
+            <EditText
+                android:id="@+id/et_login_psd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_corner"
+                android:hint="@string/login_input_psd"
+                android:inputType="text"
+                android:maxLength="16"
+                android:paddingStart="50dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/color505050"
+                android:textColorHint="@color/colorCCC"
+                app:layout_textSizePercent="2.5%sh" />
+
+            <ImageView
+                android:id="@+id/et_login_psdIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_psd_icon"
+                app:layout_heightPercent="60%h"
+                app:layout_marginStartPercent="2%sw"
+                app:layout_widthPercent="60%h" />
+
+        </com.hiber.tools.layout.PercentRelativeLayout>
+
+        <!-- 自动登录 -->
+        <com.hiber.tools.layout.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_heightPercent="7%sh"
+            app:layout_marginTopPercent="2%sh"
+            app:layout_widthPercent="70%sw">
+
+            <ImageView
+                android:id="@+id/iv_login_checkIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/login_box_checked"
+                app:layout_heightPercent="45%h"
+                app:layout_widthPercent="45%h" />
+
+            <TextView
+                android:id="@+id/tv_login_checkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/login_remember_psd"
+                android:textColor="@color/color505050"
+                app:layout_marginStartPercent="2%sw"
+                app:layout_textSizePercent="2%sh" />
+
+            <TextView
+                android:id="@+id/tv_login_toReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/login_toreg"
+                android:textColor="@color/colorFFF"
+                app:layout_marginStartPercent="40%sw"
+                app:layout_textSizePercent="2%sh" />
+
+        </com.hiber.tools.layout.PercentLinearLayout>
+
+        <!-- 登录 -->
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bt_selector2"
+            android:text="@string/login_logintext"
+            android:textColor="@color/colorFFF"
+            app:layout_marginTopPercent="10%sh"
+            app:layout_textSizePercent="2%sh"
+            app:layout_widthPercent="70%sw" />
+
+        <!-- 忘记密码 -->
+        <TextView
+            android:id="@+id/tv_login_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login_forgot"
+            android:textColor="@color/colorFFF"
+            app:layout_marginTopPercent="4%sh"
+            app:layout_textSizePercent="2%sh" />
+
+    </com.hiber.tools.layout.PercentLinearLayout>
+
+    <!-- 隐私条款 -->
+    <TextView
+        android:id="@+id/tv_login_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="<隐私协议> <用户协议>"
+        android:textColor="@color/colorFF7700"
+        app:layout_marginBottomPercent="1%sh"
+        app:layout_textSizePercent="1.5%sh" />
+
+    <!-- 隐私条款2 -->
+    <TextView
+        android:id="@+id/tv_login_privacy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_login_privacy"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="注册或登录代表您已阅读并同意:"
+        android:textColor="@color/color505050"
+        app:layout_textSizePercent="1.5%sh" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>
