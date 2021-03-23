@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <ImageView
+        android:id="@+id/rl_bg_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_circle_bg"
+        app:layout_heightPercent="85%sh" />
+
+    <ImageView
+        android:id="@+id/iv_verify_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/forgot_arrow"
+        app:layout_heightPercent="12%sw"
+        app:layout_marginPercent="3%sh"
+        app:layout_widthPercent="12%sw" />
+
+    <ImageView
+        android:id="@+id/iv_verify_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/verify_text"
+        app:layout_heightPercent="15%sw"
+        app:layout_marginTopPercent="20%sh"
+        app:layout_widthPercent="50%sw" />
+
+    <ImageView
+        android:id="@+id/iv_verify_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_verify_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/verify_icon"
+        app:layout_heightPercent="15%sw"
+        app:layout_marginTopPercent="15%sh"
+        app:layout_widthPercent="15%sw" />
+
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_verify_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_verify_lock"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="7%sh"
+        app:layout_marginTopPercent="15%sh"
+        app:layout_widthPercent="80%sw">
+
+        <EditText
+            android:id="@+id/et_verify_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/verify_pls_input"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingStart="50dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/color505050"
+            android:textColorHint="@color/colorFFF"
+            app:layout_textSizePercent="2.5%sh" />
+
+        <ImageView
+            android:id="@+id/iv_verify_numberIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_star"
+            app:layout_heightPercent="45%h"
+            app:layout_widthPercent="45%h" />
+
+        <View
+            android:id="@+id/v_verify_phoneLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorFFF" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- 按钮 -->
+    <Button
+        android:id="@+id/bt_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_selector2"
+        android:text="@string/forgot_confirm"
+        android:textColor="@color/colorFFF"
+        app:layout_marginBottomPercent="5%sh"
+        app:layout_textSizePercent="2%sh"
+        app:layout_widthPercent="80%sw" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

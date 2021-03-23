@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <ImageView
+        android:id="@+id/rl_privacy_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_circle_bg"
+        app:layout_heightPercent="85%sh" />
+
+    <TextView
+        android:id="@+id/tv_privacy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_corner_pressed"
+        android:gravity="center"
+        android:text="@string/privacy_title"
+        android:textColor="@color/color505050"
+        app:layout_heightPercent="6%sh"
+        app:layout_marginTopPercent="5%sh"
+        app:layout_textSizePercent="2.5%sh"
+        app:layout_widthPercent="30%sw" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_privacy_title"
+        android:fadeScrollbars="true"
+        android:scrollbars="none"
+        app:layout_marginBottomPercent="10%sh"
+        app:layout_marginEndPercent="2%sh"
+        app:layout_marginStartPercent="2%sh"
+        app:layout_marginTopPercent="2%sh">
+
+        <TextView
+            android:id="@+id/tv_privacy_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_privacy_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:rotation="180"
+        android:src="@drawable/guide_right_arrow"
+        app:layout_heightPercent="12%sw"
+        app:layout_marginPercent="3%sh"
+        app:layout_widthPercent="12%sw" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

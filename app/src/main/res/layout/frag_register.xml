@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         app:layout_heightPercent="7%sh"
-        app:layout_marginTopPercent="40%sh"
+        app:layout_marginTopPercent="30%sh"
         app:layout_widthPercent="80%sw">
 
         <EditText
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/register_dot"
+            android:src="@drawable/register_moon"
             app:layout_heightPercent="45%h"
             app:layout_widthPercent="45%h" />
 
@@ -94,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/register_triangle"
+            android:src="@drawable/register_drop"
             app:layout_heightPercent="45%h"
             app:layout_widthPercent="45%h" />
 
@@ -150,19 +150,62 @@
 
     </com.hiber.tools.layout.PercentRelativeLayout>
 
+    <!-- 手机号 -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_reg_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_reg_email"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="7%sh"
+        app:layout_marginTopPercent="1%sh"
+        app:layout_widthPercent="80%sw">
+
+        <EditText
+            android:id="@+id/et_reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/register_input_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingStart="50dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/color505050"
+            android:textColorHint="@color/colorFFF"
+            app:layout_textSizePercent="2.5%sh" />
+
+        <ImageView
+            android:id="@+id/iv_reg_phoneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_star"
+            app:layout_heightPercent="45%h"
+            app:layout_widthPercent="45%h" />
+
+        <View
+            android:id="@+id/v_reg_phoneLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorFFF" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
     <!-- 按钮 -->
     <Button
         android:id="@+id/bt_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rl_reg_email"
+        android:layout_below="@id/rl_reg_phone"
         android:layout_centerHorizontal="true"
         android:background="@drawable/bt_selector2"
         android:text="@string/login_toreg"
         android:textColor="@color/colorFFF"
         app:layout_marginTopPercent="7%sh"
         app:layout_textSizePercent="2%sh"
-        app:layout_widthPercent="70%sw" />
+        app:layout_widthPercent="80%sw" />
 
     <!-- 回退 -->
     <ImageView

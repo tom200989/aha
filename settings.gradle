@@ -1,2 +1,3 @@
-include ':app'
+include ':app' // 主体
+// 起始.引导.登录.注册.隐私.忘记
 rootProject.name = "aha"
