@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,Autofill,LabelFor,HardcodedText">
+
+    <ImageView
+        android:id="@+id/rl_bg_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_circle_bg"
+        app:layout_heightPercent="85%sh" />
+
+    <ImageView
+        android:id="@+id/rl_bg_reg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/register_wave"
+        app:layout_heightPercent="50%sw" />
+
+    <!-- 用户名 -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_reg_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="7%sh"
+        app:layout_marginTopPercent="40%sh"
+        app:layout_widthPercent="80%sw">
+
+        <EditText
+            android:id="@+id/et_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/login_input_name"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingStart="50dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/color505050"
+            android:textColorHint="@color/colorFFF"
+            app:layout_textSizePercent="2.5%sh" />
+
+        <ImageView
+            android:id="@+id/iv_reg_userIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_dot"
+            app:layout_heightPercent="45%h"
+            app:layout_widthPercent="45%h" />
+
+        <View
+            android:id="@+id/v_reg_userLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorFFF" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- 密码 -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_reg_psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_reg_username"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="7%sh"
+        app:layout_marginTopPercent="1%sh"
+        app:layout_widthPercent="80%sw">
+
+        <EditText
+            android:id="@+id/et_reg_psd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/login_input_psd"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingStart="50dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/color505050"
+            android:textColorHint="@color/colorFFF"
+            app:layout_textSizePercent="2.5%sh" />
+
+        <ImageView
+            android:id="@+id/iv_reg_psdIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_triangle"
+            app:layout_heightPercent="45%h"
+            app:layout_widthPercent="45%h" />
+
+        <View
+            android:id="@+id/v_reg_psdLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorFFF" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- 邮箱 -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_reg_psd"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="7%sh"
+        app:layout_marginTopPercent="1%sh"
+        app:layout_widthPercent="80%sw">
+
+        <EditText
+            android:id="@+id/et_reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/register_input_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="16"
+            android:paddingStart="50dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/color505050"
+            android:textColorHint="@color/colorFFF"
+            app:layout_textSizePercent="2.5%sh" />
+
+        <ImageView
+            android:id="@+id/iv_reg_emailIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_ling"
+            app:layout_heightPercent="45%h"
+            app:layout_widthPercent="45%h" />
+
+        <View
+            android:id="@+id/v_reg_emailLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorFFF" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- 按钮 -->
+    <Button
+        android:id="@+id/bt_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_reg_email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_selector2"
+        android:text="@string/login_toreg"
+        android:textColor="@color/colorFFF"
+        app:layout_marginTopPercent="7%sh"
+        app:layout_textSizePercent="2%sh"
+        app:layout_widthPercent="70%sw" />
+
+    <!-- 回退 -->
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/guide_right_arrow"
+        android:rotation="180"
+        android:text="@string/login_toreg"
+        android:textColor="@color/colorFFF"
+        app:layout_heightPercent="12%sw"
+        app:layout_marginPercent="3%sh"
+        app:layout_textSizePercent="2%sh"
+        app:layout_widthPercent="12%sw" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>
